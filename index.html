@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <!--EXAMPLE IN GUMROAD: https://thomasfrank.gumroad.com/l/ultimatebrain-->
+</head>
+<body>
+    <main class="fs_product">
+        <div class="fs_hero">
+            <img class="fs_hero__img" src="./img/product-img.png" alt="Ultimate Brain for Notion photo"/>
+            <div class="fs_hero__info">
+                <h1 class="fs_hero__title">
+                    Ultimate Brain for Notion
+                </h1>
+                <div class="fs_hero__price">
+                    $ 129
+                </div>
+                <p class="fs_hero__desc">
+                    Get The ultimate Brain Template, extensive tutorials, and access to our Circle support community
+                </p>
+                <button class="fs_hero__btn">
+                    Add to cart
+                </button>
+                <div class="fs_hero__bottom">
+                    <a class="fs_hero__person" href="#">
+                        <img class="fs_hero__avatar" src="./img/person.png" alt="seller"/>
+                        <div class="fs_hero__name">
+                            Thomas Frank
+                        </div>
+                    </a>
+                    <div class="fs_hero__rating">
+                        <svg class="fs_hero__star" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.9861 6.87156C18.0761 6.42191 17.7163 5.88232 17.2667 5.88232L12.1406 5.16288L9.80244 0.486483C9.71251 0.306622 9.62258 0.216691 9.44272 0.126761C8.99306 -0.143031 8.45348 0.0368302 8.18369 0.486483L5.93542 5.16288L0.809376 5.88232C0.539584 5.88232 0.359723 5.97225 0.269792 6.15211C-0.0899306 6.51184 -0.0899306 7.05142 0.269792 7.41114L3.95695 11.0084L3.05764 16.1344C3.05764 16.3143 3.05764 16.4941 3.14757 16.674C3.41736 17.1237 3.95695 17.3035 4.4066 17.0337L8.99306 14.6056L13.5795 17.0337C13.6695 17.1237 13.8493 17.1237 14.0292 17.1237C14.1191 17.1237 14.1191 17.1237 14.209 17.1237C14.6587 17.0337 15.0184 16.5841 14.9285 16.0445L14.0292 10.9184L17.7163 7.32121C17.8962 7.23128 17.9861 7.05142 17.9861 6.87156Z" fill="black"/>
+                        </svg>
+                        <div class="fs_hero__stats">
+                            5.0 (10 reviews)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fs_desc">
+            <p>The <b>ultimate</b> system and second brain for Notion</p>
+            <p>Ultimate Brain seamlessly combines tasks, projects, notes, and goals - turning Notion in&nbsp;your all-in-one task manager, note-taker, and planner.</p>
+            <p><b>LAUNCH SALE:</b> Use coe <b>UBLAUNCH</b> to get 50% off1</p>
+            <img src="./img/video-example.png" alt="description for video"/>
+        </div>
+    </main>
+    <script>
+        if (window.innerWidth < 761) {
+            const heroImg = document.querySelector('.fs_hero__img');
+            heroImg.style.opacity = 0;
+            heroImg.style.transform = 'translateY(20px)';
+
+            setTimeout(function() {
+                heroImg.style.transition = 'opacity 0.5s, transform 0.5s';
+                heroImg.style.opacity = '1';
+                heroImg.style.transform = 'translateY(0)';
+            }, 500);
+            
+            const heroInfo = document.querySelector('.fs_hero__info');
+            const description = document.querySelector('.fs_desc');
+            heroInfo.style.opacity = 0;
+            description.style.opacity = 0;
+            setTimeout(function() {
+                heroInfo.style.transition = 'opacity 0.5s';
+                heroInfo.style.opacity = '1';
+                description.style.transition = 'opacity 0.5s';
+                description.style.opacity = '1';
+            }, 900);
+            
+            const heroBtn = document.querySelector('.fs_hero__btn');
+            const heroReviews = document.querySelector('.fs_hero__rating');
+            heroBtn.style.opacity = 0;
+            heroBtn.style.transform = 'translateY(20px)';
+            heroReviews.style.opacity = 0;
+            heroReviews.style.transform = 'translateY(20px)';
+            setTimeout(function() {
+                heroBtn.style.transition = 'opacity 0.5s, transform 0.5s';
+                heroBtn.style.opacity = '1';
+                heroBtn.style.transform = 'translateY(0)';
+
+                heroReviews.style.transition = 'opacity 0.5s, transform 0.5s';
+                heroReviews.style.opacity = '1';
+                heroReviews.style.transform = 'translateY(0)';
+            }, 1300);
+        }
+    </script>
+</body>
+</html>
