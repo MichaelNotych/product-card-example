@@ -13,6 +13,12 @@ body {
     background-color: #fafafa;
 }
 
+@media (max-width: 460px) {
+    body {
+        font-size: 14px;
+    }
+}
+
 .hidden {
     opacity: 0;
 }
@@ -27,7 +33,13 @@ body {
 
 @media (max-width: 760px) {
     .fs_product {
-        padding-bottom: 150px;
+        padding: 20px 20px 150px;
+    }
+}
+
+@media (max-width: 460px) {
+    .fs_product {
+        padding: 10px 10px 150px;
     }
 }
 
@@ -96,6 +108,13 @@ body {
     }
 }
 
+@media (max-width: 460px) {
+    .fs_hero__info {
+        padding: 0 10px;
+        margin-bottom: 30px;
+    }
+}
+
 .fs_hero__title {
     font-size: 34px;
     font-weight: 500;
@@ -105,6 +124,12 @@ body {
 @media (max-width: 1200px) {
     .fs_hero__title {
         margin: 0 0 20px;
+    }
+}
+
+@media (max-width: 460px) {
+    .fs_hero__title {
+        font-size: 28px;
     }
 }
 
@@ -154,6 +179,14 @@ body {
         bottom: 20px;
         top: auto;
         z-index: 3;
+    }
+}
+
+@media (max-width: 460px) {
+    .fs_hero__btn {
+        left: 20px;
+        font-size: 14px;
+        width: 140px;
     }
 }
 
@@ -213,6 +246,12 @@ body {
     }
 }
 
+@media (max-width: 460px) {
+    .fs_hero__rating {
+        padding-left: 180px;
+    }
+}
+
 .fs_hero__star {
     width: 18px;
     height: 18px;
@@ -233,16 +272,31 @@ body {
     }
 }
 
+@media (max-width: 460px) {
+    .fs_desc {
+        padding: 10px;
+    }
+}
+
 .fs_desc p {
     margin: 0;
+}
+
+.fs_desc a {
+    color: inherit;
 }
 
 .fs_desc p:not(:last-child) {
     margin-bottom: 15px;
 }
 
+.fs_desc li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
 .fs_desc img {
     max-width: 700px;
     width: 100%;
     border-radius: 8px;
+    margin-bottom: 15px;
 }
