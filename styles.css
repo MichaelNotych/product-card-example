@@ -305,3 +305,9 @@ body {
 .fs_desc iframe {
     height: 400px;
 }
+
+@media (max-width: 460px) {
+    .fs_desc iframe {
+        height: 200px;
+    }
+}
